@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.hoverbox{
+    background-color: #002fff ;
+    text-align: center; 
+    width: 70px;
+    font-size: 10px;
+    color: #ffffff;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+
+}
+.hoverbox:hover{
+    background-color: #000 solid 5px;
+    text-align: center; 
+    width: 70px;
+    font-size: 10px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+.header{
+    display: flexbox;
+    width: 500px;
+    align-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 10px solid #ccc;
+    border: #9b9b9b solid 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content{
+    display: flexbox;
+    width: 500px;
+        align-content: top;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border: 2px solid rgb(255, 0, 0);
+    height: 300px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content p{
+    padding: 10px;
+    margin: 0px;
+    }
+
+.content a{
+    color: white;
+    font-size: 12px;
+    margin: 10px 0;
+    padding: auto;
+    font-family: Arial, sans-serif;
+    display: inline-block; /* 確保可以設定寬高 */
+    line-height: 20px; /* 確保文字垂直置中 */
+    transition: all 0.3s ease; /* 增加動畫效果，變化平滑 */
+    display: block;
+}
+.content a:hover{
+    background-color: blue;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: auto;
+    font-family: Arial, sans-serif;
+    display: inline-block; /* 確保可以設定寬高 */
+    line-height: 20px; /* 確保文字垂直置中 */
+    transition: all 0.3s ease; /* 增加動畫效果，變化平滑 */
+    display: block;
+}
+
+
+.footer{
+    display: flexbox;
+    align-content: center;
+    width: 500px;
+    padding: 10px;
+    background-color: #f38787;
+    color: black;
+    text-align: center; 
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
