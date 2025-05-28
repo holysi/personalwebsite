@@ -1,0 +1,459 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;    
+}
+.castoro-regular {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .castoro-regular-italic {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  *,*:before,*:after{
+box-sizing: border-box
+} 
+.outsidebox{
+      max-width: 1300px;
+}
+/* 頁首 */
+.header{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.header a{color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Castoro", serif;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+/* 第一頁 */
+
+.container1{
+    width: 1200px;
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;    
+    position: relative;
+
+}
+.container1_warp{
+    flex: row;
+    display: flex;
+    
+
+}
+    .page1_left{
+        width: 100%;
+        object-fit: cover;
+        object-position:  left;
+        
+    }
+    .page1_right{
+        width: 100%;
+        object-fit: cover;
+        object-position:  left;
+        
+    }
+    .container1_float{
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    font-family: "Noto Sans TC", sans-serif;    
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 50%;
+    
+   
+}
+
+
+.Hero_Section{
+    color :blue;
+    font-size: 20px;
+    
+}
+.Hero_Section H1{
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+/* 第二頁 */
+
+.page2warp{
+    width:100%;
+    flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+
+.page2{
+    width:100%;
+    margin-right: 10px;
+    flex-direction: column;
+    display: flex;
+    align-content: left ;
+    line-height: 1.5em;
+    }
+.page2 img{
+    object-position: left;
+    object-fit:cover;
+    width: 80vh;    
+    }
+/* 搜索框*/
+.page3{
+    width: 100%;
+
+}
+
+.page3warp{
+    width: 30%;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+.searchbar{
+    width: 30%;
+    font-size: 12px;
+    padding: 10px;
+    color: #666;
+    border-radius: 20px;
+    border: 1px solid #666; 
+    font-family: "Noto Sans TC", sans-serif;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+    flex-grow: 8;
+    justify-content: center;
+}
+.searchbar a{
+    text-decoration: none;
+    color: #666;
+}
+/* 頁尾 */
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.footer_warp{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.copyright{
+    font-size: 12px;
+    color: #666;
+    font-family: "Noto Sans TC", sans-serif;
+    margin-left: 20px;
+}
+
+  
+/* 處理九宮格 */
+.container{
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.warp{
+    margin-bottom: 50px;    
+    flex-direction: column;
+    width: 32%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    }
+.item{
+    width: 100%; 
+    margin-left: 5px;
+    line-height: 1.5em;
+    font-family: "Noto Sans TC", sans-serif;    
+    margin-right: 5px;
+    
+ }
+
+.date{
+    font-size: 12px;
+    font-family: "Noto Sans TC", sans-serif;    
+}
+
+.tag{
+    font-size: 14px;
+    color: blue;    
+    font-family: "Noto Sans TC", sans-serif;
+}
+.title{
+    margin-bottom: 30px;
+    line-height: 150%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Noto Sans TC", sans-serif;
+    }
+.text{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 130%;
+    color: #666;
+    display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3em;     /* 行高，和高度配合 */
+  max-height: 2.8em;        /* 行高 * 顯示行數，這裡是1.5 * 2 */
+  position: relative;
+  z-index: 1;
+  background: white; /* 避免被圖片遮擋 */
+  font-family: "Noto Sans TC", sans-serif;
+  margin-bottom: 20px;
+}
+.btn{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    color: #666;
+    border-radius: 20px;
+    border: 1px solid #666; 
+    font-family: "Noto Sans TC", sans-serif;
+    margin-top: 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: #666;
+}
+.bnn{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    
+}
+
+
+/*手機板*/
+@media screen and (max-width: 768px) {
+    .outsidebox{
+    width: 600px;
+}
+/*m第一頁*/
+    .container1{
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        flex-direction: column;
+        display: flex;
+        display: block;
+        flex-wrap: wrap;   
+        position: relative;
+    }
+    .container1_warp{
+        width: 100%;
+        flex-direction: column;
+    }
+    .page1_right{
+        height: 10rem;
+        width: 100%;
+        object-fit: none;
+        object-position:  right bottom;
+        
+    }
+    .page1_left{        
+        width: 100%;
+        object-fit:cover;
+        object-position:  right top;
+        
+    }
+
+    .container1_float{
+        width: 100%;
+        top: 42%;
+        left: 2%;       
+        z-index: 3;
+        position: absolute;
+        
+    }
+    .container1_warp{
+        flex-direction: column;
+    }
+    .container1{
+        flex-direction: column;
+    }
+
+    .Hero_Section H1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+}
+/*m page2*/
+
+.page2warp{
+    width:100%;
+    flex-direction: column;
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+
+    }
+
+.page2{
+    width: 100%;
+    align-items: start;
+    flex-direction: column;
+    display: flex;
+    }
+.page2 img{
+        width: 100%;
+       
+        object-fit: cover;
+        object-position: left;    
+    }
+
+/* m搜索框*/
+
+.page3{
+    width: 100%;
+}
+.page3warp{
+    width: 100%;
+    }
+.searchbar{
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+ 
+}
+/* m處理九宮格 */
+.container{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 5px;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;   
+    flex-grow: 8;
+}
+
+.warp{
+    width: 100%;
+    margin-left: 5px;
+    }
+.item img{
+    width: 100%; 
+    margin-left: 0px;
+ }
+
+/* m頁尾 */
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.footer_warp{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.copyright{
+    font-size: 12px;
+    color: #666;
+    font-family: "Noto Sans TC", sans-serif;
+    margin-left: 20px;
+}
+}
