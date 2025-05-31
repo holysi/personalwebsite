@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1
 }
 ol, ul {
 	list-style: none;
@@ -60,6 +60,10 @@ table {
   *,*:before,*:after{
 box-sizing: border-box
 } 
+
+* {
+  outline: 1px solid red;
+}
 .outsidebox{
       max-width: 1300px;
 }
@@ -113,7 +117,7 @@ box-sizing: border-box
         
     }
     .container1_float{
-    width: 50%;
+    width: 45%;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
@@ -224,13 +228,10 @@ box-sizing: border-box
 /* 處理九宮格 */
 .container{
     width: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
-
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
     
 }
@@ -241,7 +242,7 @@ box-sizing: border-box
     width: 32%;
     margin-left: 5px;
     margin-right: 5px;
-
+    justify-content: space-between;
     }
 .item{
     width: 100%; 
@@ -300,6 +301,7 @@ box-sizing: border-box
     color: #666;
 }
 .bnn{
+    margin-left: 5px;
     font-size: 14px;
     font-weight: bold;
     padding: 5px;
@@ -312,13 +314,27 @@ box-sizing: border-box
 
 
 /*手機板*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width:375px) {
     .outsidebox{
-    width: 600px;
+    max-width: 375px;
 }
+
+/*手機板*/
+.header{
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+
 /*m第一頁*/
     .container1{
-        width: 100%;
+        width: 375px;
         margin: 0px auto;
         padding: 0px;
         flex-direction: column;
@@ -332,7 +348,7 @@ box-sizing: border-box
         flex-direction: column;
     }
     .page1_right{
-        height: 10rem;
+        height: 6rem;
         width: 100%;
         object-fit: none;
         object-position:  right bottom;
@@ -347,23 +363,22 @@ box-sizing: border-box
 
     .container1_float{
         width: 100%;
-        top: 42%;
-        left: 2%;       
+        top: 39%;
+        left: 0%;       
         z-index: 3;
-        position: absolute;
-        
-    }
-    .container1_warp{
-        flex-direction: column;
-    }
-    .container1{
-        flex-direction: column;
+        width: 290px;
     }
 
     .Hero_Section H1{
-    margin-bottom: 20px;
-    font-size: 60px;
+    margin-bottom: 10px;
+    font-size: 50px;
     font-weight: bold;
+    width: 290px;
+}
+.Hero_Section {
+    font-size: 16px;
+    width: 290px;
+    
 }
 /*m page2*/
 
@@ -373,9 +388,19 @@ box-sizing: border-box
         display: flex;
         align-items: start;
         flex-wrap: wrap;
-
+    justify-content: left stretch flex-start;
+    
+    text-wrap: wrap;
     }
-
+.item{
+    align-content: left;
+    width: 100%; 
+    margin-left: 5px;
+    line-height: 1.5em;
+    font-family: "Noto Sans TC", sans-serif;    
+    margin-right: 5px;
+    text-wrap: wrap;
+ }
 .page2{
     width: 100%;
     align-items: start;
@@ -389,16 +414,19 @@ box-sizing: border-box
         object-position: left;    
     }
 
+
+
+
 /* m搜索框*/
 
 .page3{
-    width: 100%;
+    width: 80vw;
 }
 .page3warp{
-    width: 100%;
+    width: 70vw;
     }
 .searchbar{
-    width: 100%;
+    width: 50vw;
     margin-left: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -407,48 +435,66 @@ box-sizing: border-box
 }
 /* m處理九宮格 */
 .container{
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 5px;
+    width: 100vw;
+      margin-left: 0px;
     flex-direction: column;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;   
-    flex-grow: 8;
-}
-
-.warp{
-    width: 100%;
-    margin-left: 5px;
-    }
-.item img{
-    width: 100%; 
-    margin-left: 0px;
- }
-
-/* m頁尾 */
-
-.footer{
-    width: 100%;
-    height: 200px;
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.warp{
+    width: 375px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    }
+
+.item img{
+    max-width: 70vw; 
+    margin-left: 0px;
+ }
+ 
+.title{
+    width: 70vw;
+    text-align: left center;
+     
+    margin-bottom: 5px;
+    }
+.text{
+    width: 70vw;
+    }
+.tag{
+    width: 70vw;
+}
+.date{
+    width: 70vw;
+}
+/* m頁尾 */
+.footer{
+    width: 75vw;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .footer_warp{
-    width: 100%;
+    width: 70vw;
     height: 200px;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-top: 0px;
 }
 .copyright{
     font-size: 12px;
