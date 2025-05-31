@@ -61,9 +61,9 @@ table {
 box-sizing: border-box
 } 
 
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 .outsidebox{
       max-width: 1300px;
 }
