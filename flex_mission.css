@@ -269,9 +269,10 @@ box-sizing: border-box
     font-weight: bold;
     line-height: 130%;
     color: #666;
-    display: -webkit-box;
+     display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
-  text-overflow: ellipsis;
   line-height: 1.3em;     /* 行高，和高度配合 */
   max-height: 2.8em;        /* 行高 * 顯示行數，這裡是1.5 * 2 */
   position: relative;
