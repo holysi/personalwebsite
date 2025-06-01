@@ -60,6 +60,17 @@ table {
   *,*:before,*:after{
 box-sizing: border-box
 } 
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  font-family: inherit;
+}
+a{display: inline-block;
+    }
+img{width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
 
 /* {
   outline: 1px solid red;
@@ -117,7 +128,7 @@ box-sizing: border-box
         
     }
     .container1_float{
-    width: 45%;
+    width: 100%;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
@@ -163,7 +174,7 @@ box-sizing: border-box
 .page2 img{
     object-position: left;
     object-fit:cover;
-    width: 80vh;    
+    width: 100%;    
     }
 /* 搜索框*/
 .page3{
@@ -184,7 +195,6 @@ box-sizing: border-box
     color: #666;
     border-radius: 20px;
     border: 1px solid #666; 
-    font-family: "Noto Sans TC", sans-serif;
     margin-left: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -220,7 +230,6 @@ box-sizing: border-box
 .copyright{
     font-size: 12px;
     color: #666;
-    font-family: "Noto Sans TC", sans-serif;
     margin-left: 20px;
 }
 
@@ -233,6 +242,7 @@ box-sizing: border-box
     justify-content:flex-start;
     align-items: stretch;
     flex-wrap: wrap;
+    margin: 0 auto;
     
 }
 
@@ -246,29 +256,24 @@ box-sizing: border-box
     }
 .item{
     width: 100%; 
-    margin-left: 5px;
-    line-height: 1.5em;
-    font-family: "Noto Sans TC", sans-serif;    
+    line-height: 1.5em; 
     margin-right: 5px;
     
  }
 
 .date{
-    font-size: 12px;
-    font-family: "Noto Sans TC", sans-serif;    
+    font-size: 12px; 
 }
 
 .tag{
     font-size: 14px;
     color: blue;    
-    font-family: "Noto Sans TC", sans-serif;
 }
 .title{
     margin-bottom: 30px;
     line-height: 150%;
     font-size: 20px;
     font-weight: bold;
-    font-family: "Noto Sans TC", sans-serif;
     }
 .text{
     font-size: 12px;
@@ -283,7 +288,6 @@ box-sizing: border-box
   position: relative;
   z-index: 1;
   background: white; /* 避免被圖片遮擋 */
-  font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 20px;
 }
 .btn{
@@ -293,7 +297,6 @@ box-sizing: border-box
     color: #666;
     border-radius: 20px;
     border: 1px solid #666; 
-    font-family: "Noto Sans TC", sans-serif;
     margin-top: 20px;
 }
 .btn a{
@@ -308,7 +311,6 @@ box-sizing: border-box
     color: white;
     background-color: blue;
     border-radius: 20px;
-    font-family: "Noto Sans TC", sans-serif;
     
 }
 
@@ -409,7 +411,6 @@ box-sizing: border-box
     }
 .page2 img{
         width: 100%;
-       
         object-fit: cover;
         object-position: left;    
     }
@@ -446,8 +447,8 @@ box-sizing: border-box
 }
 
 .warp{
-    width: 375px;
-    margin-left: 0px;
+    width: 365px;
+    margin-left: 10px;
     margin-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
@@ -455,29 +456,31 @@ box-sizing: border-box
     }
 
 .item img{
-    max-width: 70vw; 
+    max-width: 90vw; 
     margin-left: 0px;
  }
  
 .title{
-    width: 70vw;
+    width: 90vw;
     text-align: left center;
      
     margin-bottom: 5px;
     }
 .text{
-    width: 70vw;
+    width: 90vw;
     }
 .tag{
-    width: 70vw;
+    width: 90vw;
 }
 .date{
-    width: 70vw;
+    width: 90vw;
 }
 /* m頁尾 */
 .footer{
     width: 75vw;
     height: 100px;
+        margin-left: 50px;
+
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -499,7 +502,6 @@ box-sizing: border-box
 .copyright{
     font-size: 12px;
     color: #666;
-    font-family: "Noto Sans TC", sans-serif;
     margin-left: 20px;
 }
 }
