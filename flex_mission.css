@@ -60,17 +60,6 @@ table {
   *,*:before,*:after{
 box-sizing: border-box
 } 
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  line-height: 1.5;
-  font-family: inherit;
-}
-a{display: inline-block;
-    }
-img{width: 100%;
-    vertical-align: middle;
-    height: auto;
-}
 
 /* {
   outline: 1px solid red;
