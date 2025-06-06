@@ -75,7 +75,6 @@ box-sizing: border-box
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     margin-bottom: 10px;
 }
 .header a{color: black;
@@ -90,7 +89,7 @@ box-sizing: border-box
 
 .container1{
     width: 1200px;
-    flex-direction: row;
+    
     display: flex;
     justify-content: start;
     align-items: center;
@@ -147,7 +146,7 @@ box-sizing: border-box
 
 .page2warp{
     width:100%;
-    flex-direction: row;
+    
         display: flex;
         align-items: center;
     }
@@ -173,7 +172,7 @@ box-sizing: border-box
 
 .page3warp{
     width: 30%;
-        flex-direction: row;
+        
         display: flex;
         align-items: center;
     }
@@ -213,7 +212,7 @@ box-sizing: border-box
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    
     margin-top: 20px;
 }
 .copyright{
@@ -227,7 +226,7 @@ box-sizing: border-box
 .container{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    
     justify-content:flex-start;
     align-items: stretch;
     flex-wrap: wrap;
@@ -235,7 +234,7 @@ box-sizing: border-box
     
 }
 
-.warp{
+.card{
     margin-bottom: 50px;    
     flex-direction: column;
     width: 32%;
@@ -319,7 +318,7 @@ box-sizing: border-box
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    
     margin-bottom: 10px;
 }
 
@@ -436,7 +435,7 @@ box-sizing: border-box
 
 }
 
-.warp{
+.card{
     width: 365px;
     margin-left: 10px;
     margin-bottom: 20px;
