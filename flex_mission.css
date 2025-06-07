@@ -60,12 +60,13 @@ table {
   *,*:before,*:after{
 box-sizing: border-box
 } 
-
-/* {
+/*
+ *{
   outline: 1px solid red;
 }*/
 .outsidebox{
       max-width: 1300px;
+      
 }
 /* 頁首 */
 .header{
@@ -116,7 +117,7 @@ box-sizing: border-box
         
     }
     .container1_float{
-    width: 100%;
+    max-width: 100%;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
