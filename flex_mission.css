@@ -324,7 +324,6 @@ justify-content: center;
 
 
 
-
 /*手機板*/
 @media screen and (max-width: 768px) {
 
@@ -373,7 +372,7 @@ justify-content: center;
     }
 .item{
     align-content: left;
-    width: 100%; 
+    width: 100vw; 
     margin-left: 5px;
     line-height: 1.5em;
     font-family: "Noto Sans TC", sans-serif;    
@@ -423,19 +422,21 @@ justify-content: center;
     
     flex-direction: column;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start  ;
+    align-items: start;
     flex-wrap: wrap;
 
 }
 
 .warp{
-    max-width: 100%;
-    margin-left: 5px;
+    max-width: 90vw;
+    
     }
 .item img{
-    max-width: 100%; 
+    max-width: 90vw; 
     margin-left: 0px;
+    display: block;
+    height: auto;
  }
  
 .title{
@@ -453,6 +454,12 @@ justify-content: center;
 .date{
     width: 90vw;
 }
+
+
+.card{
+    max-width: 100vw;
+    
+    }
 /* m頁尾 */
 .footer{
     width: 75vw;
