@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 0;
 }
 ol, ul {
 	list-style: none;
@@ -61,11 +61,11 @@ table {
 box-sizing: border-box
 } 
 .outsidebox{
-      max-width: 1300px;
+    max-width: 1300px;
 }
 /* 頁首 */
 .header{
-    width: 100%;
+    max-width: 100vw;
     margin-top: 1rem;
     background-color: #ffffff;
     display: flex;
@@ -73,6 +73,11 @@ box-sizing: border-box
     align-items: center;
     flex-direction: row;
     margin-bottom: 10px;
+   	line-height: 1.05;
+
+}
+.header_menu{
+    max-width: 100%;
 }
 .header a{color: black;
     text-decoration: none;
@@ -85,19 +90,19 @@ box-sizing: border-box
 /* 第一頁 */
 
 .container1{
-    width: 1200px;
+    MAX-width: 100vw;
     flex-direction: row;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: space-around;
     flex-wrap: wrap;    
     position: relative;
-
+    
 }
 .container1_warp{
+    max-width: 100vw;
     flex: row;
-    display: flex;
-    
+    display: flex;  
 
 }
     .page1_left{
@@ -113,7 +118,7 @@ box-sizing: border-box
         
     }
     .container1_float{
-    width: 50%;
+    width: 45%;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
@@ -121,20 +126,16 @@ box-sizing: border-box
     position: absolute;
     align-items: center;
     justify-content: center;
+    line-height: 1.05;
     top: 30%;
     left: 50%;
-    
-   
-}
-
-
+   }
 .Hero_Section{
     color :blue;
     font-size: 20px;
-    
 }
 .Hero_Section H1{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 80px;
     font-weight: bold;
 }
@@ -142,24 +143,33 @@ box-sizing: border-box
 /* 第二頁 */
 
 .page2warp{
-    width:100%;
-    flex-direction: row;
-        display: flex;
-        align-items: center;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  
     }
 
 .page2{
-    width:100%;
-    margin-right: 10px;
-    flex-direction: column;
-    display: flex;
-    align-content: left ;
-    line-height: 1.5em;
+
+  width: 50%;
+  flex-shrink: 0;
     }
 .page2 img{
+    width: 100%;
+    height: auto;
     object-position: left;
     object-fit:cover;
-    width: 80vh;    
+    display: block;
+
+    }
+.page2_text{
+line-height: 1.5;
+width: 50vw;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
     }
 /* 搜索框*/
 .page3{
@@ -223,7 +233,7 @@ box-sizing: border-box
   
 /* 處理九宮格 */
 .container{
-    width: 100%;
+    width: 97%;
     margin-left: 5px;
     margin-right: 5px;
 
@@ -238,7 +248,7 @@ box-sizing: border-box
 .warp{
     margin-bottom: 50px;    
     flex-direction: column;
-    width: 32%;
+    max-width: 32%;
     margin-left: 5px;
     margin-right: 5px;
 
@@ -246,9 +256,13 @@ box-sizing: border-box
 .item{
     width: 100%; 
     margin-left: 5px;
-    line-height: 1.5em;
-    font-family: "Noto Sans TC", sans-serif;    
+    line-height: 1.5em; 
     margin-right: 5px;
+    
+ }
+.item img{
+    max-width: 30vw; 
+    display: block;
     
  }
 
@@ -311,64 +325,44 @@ box-sizing: border-box
 }
 
 
+
+
 /*手機板*/
 @media screen and (max-width: 768px) {
+
+    
     .outsidebox{
-    width: 600px;
+    max-width: 100vw;    
 }
 /*m第一頁*/
     .container1{
-        width: 100%;
-        margin: 0px auto;
-        padding: 0px;
+    max-width: 100vw;
         flex-direction: column;
         display: flex;
-        display: block;
-        flex-wrap: wrap;   
-        position: relative;
+        margin: 0 auto;
     }
+
     .container1_warp{
-        width: 100%;
+        max-width: 100vw;
         flex-direction: column;
+        display: flex;
     }
-    .page1_right{
+    
+    .container1_float{
+    width: 80%;
+      line-height: 1.05;
+    top: 45%;
+    left: 2%;
+    }
+     .page1_right{
         height: 10rem;
-        width: 100%;
+        max-width: 100vw;
         object-fit: none;
         object-position:  right bottom;
         
     }
-    .page1_left{        
-        width: 100%;
-        object-fit:cover;
-        object-position:  right top;
-        
-    }
-
-    .container1_float{
-        width: 100%;
-        top: 42%;
-        left: 2%;       
-        z-index: 3;
-        position: absolute;
-        
-    }
-    .container1_warp{
-        flex-direction: column;
-    }
-    .container1{
-        flex-direction: column;
-    }
-
-    .Hero_Section H1{
-    margin-bottom: 20px;
-    font-size: 60px;
-    font-weight: bold;
-}
-/*m page2*/
-
 .page2warp{
-    width:100%;
+    max-width: 100vw;
     flex-direction: column;
         display: flex;
         align-items: start;
@@ -388,14 +382,21 @@ box-sizing: border-box
         object-fit: cover;
         object-position: left;    
     }
+    
+.page2_text{
+line-height: 1.5;
+width: 95vw;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+    }
 
 /* m搜索框*/
 
-.page3{
-    width: 100%;
-}
 .page3warp{
-    width: 100%;
+    width: 80vw;
     }
 .searchbar{
     width: 100%;
@@ -403,13 +404,14 @@ box-sizing: border-box
     margin-bottom: 20px;
     margin-top: 20px;
     display: block;
- 
 }
+
 /* m處理九宮格 */
 .container{
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 5px;
+    width: 95vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    
     flex-direction: column;
     display: flex;
     justify-content: start;
@@ -420,11 +422,11 @@ box-sizing: border-box
 }
 
 .warp{
-    width: 100%;
+    max-width: 100%;
     margin-left: 5px;
     }
 .item img{
-    width: 100%; 
+    max-width: 100%; 
     margin-left: 0px;
  }
 
